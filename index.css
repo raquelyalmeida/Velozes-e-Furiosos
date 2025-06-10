@@ -2,13 +2,13 @@
 body {
     font-family: Arial, sans-serif; /* Fonte padrão */
     margin: 20px; /* Margem do corpo da página */
-    background-color: #f0f0f0; /* Cor de fundo */
+    background-color: #e70303; /* Cor de fundo */
 }
 
 /* Estilos para o título principal */
 h1 {
     text-align: center; /* Alinhamento do título */
-    color: #333; /* Cor do texto */
+    color: #0b0bdc; /* Cor do texto */
     margin-bottom: 20px; /* Espaçamento abaixo do título */
 }
 
