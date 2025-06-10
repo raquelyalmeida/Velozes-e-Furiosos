@@ -1,8 +1,8 @@
 /* Estilos para o corpo da página */
 body {
     font-family: Arial, sans-serif; /* Fonte padrão */
-    margin: 20px; /* Margem do corpo da página */
-    background-color: #f0f0f0; /* Cor de fundo */
+    margin: 30px; /* Margem do corpo da página */
+    background-color: #0819d7; /* Cor de fundo */
 }
 
 /* Estilos para o título principal */
@@ -22,7 +22,7 @@ ul {
 /* Estilos para os itens da lista */
 li {
     margin-bottom: 10px; /* Espaçamento entre os itens */
-    color: #555; /* Cor do texto */
+    color: #b01212; /* Cor do texto */
 }
 
 /* Estilos para o iframe do YouTube */
