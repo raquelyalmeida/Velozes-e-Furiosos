@@ -1,35 +1,39 @@
-/* Estilos para o corpo da página */
 body {
-    font-family: Arial, sans-serif; /* Fonte padrão */
-    margin: 30px; /* Margem do corpo da página */
-    background-color: #ececf4; /* Cor de fundo */
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  padding: 20px;
+  color: #333;
 }
 
-/* Estilos para o título principal */
 h1 {
-    text-align: center; /* Alinhamento do título */
-    color: #cd0840; /* Cor do texto */
-    margin-bottom: 50px; /* Espaçamento abaixo do título */
+  color: red;
+  text-align: center;
 }
 
-/* Estilos para a lista de itens */
 ul {
-    list-style-type: disc; /* Estilo dos marcadores da lista */
-    padding-left: 20px; /* Espaçamento à esquerda da lista */
-    margin-bottom: 30px; /* Espaçamento abaixo da lista */
+  list-style: none;
+  padding: 0;
 }
 
-/* Estilos para os itens da lista */
 li {
-    margin-bottom: 30px; /* Espaçamento entre os itens */
-    color: #000000; /* Cor do texto */
+  margin-bottom: 10px;
 }
 
-/* Estilos para o iframe do YouTube */
-iframe {
-    display: block; /* Exibir o iframe como um bloco */
-    margin: 0 auto; /* Centrar o iframe */
-    width: 100%; /* Largura do iframe */
-    height: 400px; /* Altura do iframe */
-    border: 1px solid #ccc; /* Borda do iframe */
+img {
+  width: 200px;
+  margin: 10px;
+}
+
+form {
+  background: #fff;
+  padding: 15px;
+  border: 1px solid #ccc;
+  width: 300px;
+  margin: 20px auto;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
 }
