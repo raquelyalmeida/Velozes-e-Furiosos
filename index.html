@@ -49,18 +49,7 @@
     <input type="submit" value="Entrar">
   </form>
 
-  <!-- Script da pesquisa -->
-  <script>
-    function filtrarFilmes() {
-      const input = document.getElementById('campo-pesquisa').value.toLowerCase();
-      const filmes = document.querySelectorAll('#lista-filmes li');
 
-      filmes.forEach(filme => {
-        const texto = filme.textContent.toLowerCase();
-        filme.style.display = texto.includes(input) ? '' : 'none';
-      });
-    }
-  </script>
 
 
 </body>
