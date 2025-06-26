@@ -36,22 +36,31 @@
   <li><img src="corrida" alt="Cena de corrida 1"></li>
     <li><img src="han.jpeg" alt="Sean e Han"></li>
     <li><img src="king.jpeg" alt="Drift King"></li>
-
-<h2>Login</h2>
+  
+    <!-- Formulário de login -->
+  <h2>Login</h2>
   <form action="#" method="post">
     <label for="email">E-mail:</label><br>
     <input type="email" id="email" name="email" required><br><br>
 
+    <label for="senha">Senha:</label><br>
+    <input type="password" id="senha" name="senha" required><br><br>
 
-    
-<section class="pesquisa">
-  <h2>Pesquisar Filmes</h2>
-  <input type="text" id="campo-pesquisa" placeholder="Digite o nome do filme..." onkeyup="filtrarFilmes()">
+    <input type="submit" value="Entrar">
+  </form>
 
-  <ul id="lista-filmes">
+  <!-- Script da pesquisa -->
+  <script>
+    function filtrarFilmes() {
+      const input = document.getElementById('campo-pesquisa').value.toLowerCase();
+      const filmes = document.querySelectorAll('#lista-filmes li');
 
-  </ul>
-</section>
+      filmes.forEach(filme => {
+        const texto = filme.textContent.toLowerCase();
+        filme.style.display = texto.includes(input) ? '' : 'none';
+      });
+    }
+  </script>
 
 
 </body>

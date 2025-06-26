@@ -1,85 +1,116 @@
 body {
-  font-family: 'Segoe UI', Tahoma, sans-serif;
-  background: linear-gradient(to right, #000000, #1a1a1a);
+  font-family: Arial, sans-serif;
+  background: #111;
   color: #fff;
   padding: 20px;
   text-align: center;
 }
 
+/* PESQUISA */
+.pesquisa {
+  max-width: 500px;
+  margin: 0 auto 30px auto;
+}
+
+#campo-pesquisa {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 8px #e50914;
+}
+
+#lista-filmes {
+  list-style: none;
+  padding: 10px 0 0 0;
+  margin: 0;
+  background: #222;
+  border-radius: 8px;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0 0 10px #e50914;
+}
+
+#lista-filmes li {
+  padding: 8px;
+  border-bottom: 1px solid #333;
+  color: #eee;
+  text-align: left;
+}
+
+#lista-filmes li:last-child {
+  border-bottom: none;
+}
+
+/* CONTEÚDO */
 h1 {
   color: #e50914;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  text-shadow: 2px 2px #000;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 20px;
-}
-
-li {
-  margin: 10px 0;
-  font-size: 1.1rem;
-  line-height: 1.5;
-}
-
-iframe {
-  border: none;
   margin-top: 20px;
+}
+
+p {
+  max-width: 700px;
+  margin: 20px auto;
+  line-height: 1.6;
+}
+
+/* VÍDEO */
+iframe {
+  margin: 30px auto;
+  display: block;
   border-radius: 10px;
   box-shadow: 0 0 15px #e50914;
 }
 
-img {
-  width: 220px;
-  border-radius: 8px;
-  margin: 10px;
-  transition: transform 0.3s ease;
-  box-shadow: 0 0 10px #e50914;
+/* IMAGENS LADO A LADO */
+.imagens {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 30px 0;
 }
 
-img:hover {
+.imagens img {
+  width: 220px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #e50914;
+  transition: transform 0.3s ease;
+}
+
+.imagens img:hover {
   transform: scale(1.05);
 }
 
-h2 {
-  color: #e50914;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-
+/* FORMULÁRIO */
 form {
-  background-color: #222;
+  background: #222;
   padding: 20px;
   border-radius: 10px;
-  width: 300px;
+  max-width: 300px;
   margin: 0 auto;
-  box-shadow: 0 0 12px #e50914;
+  box-shadow: 0 0 10px #e50914;
 }
 
 input[type="email"],
-input[type="password"] {
+input[type="password"],
+input[type="submit"] {
   width: 100%;
   padding: 10px;
-  margin-bottom: 15px;
-  border: none;
+  margin-bottom: 10px;
   border-radius: 5px;
+  border: none;
 }
 
 input[type="submit"] {
-  background-color: #e50914;
-  color: #fff;
-  padding: 10px;
-  width: 100%;
-  border: none;
-  border-radius: 5px;
+  background: #e50914;
+  color: white;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 input[type="submit"]:hover {
-  background-color: #b0060f;
+  background: #b00610;
 }
